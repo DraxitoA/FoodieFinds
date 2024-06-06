@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder - FoodieFinds</title>
+    <link rel="stylesheet" href="style-rcp.css">
+    <link href="https://fonts.cdnfonts.com/css/h-hadir-sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link href="https://fonts.cdnfonts.com/css/diary-santa" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<body>
+    <header id="main-header" class="navbar">
+        <h1 class="logo">FoodieFinds.</h1>
+        <nav>
+            <ul>
+                <button class="home"><a href="home.html">HOME</a></button>
+                <button class="rcp-finder"><a href="rcp-finder.html">RECIPE FINDER</a></button>
+                <button class="food-calc"><a href="food-estimation.html">FOOD CALCULATOR</a></button>
+                <button class="fw-tips"><a href="foodwaste-tips.html">FOOD WASTE TIPS</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="cover">
+        <h1 class="title1">Recipe Finder</h1>
+        <p class="prgrph">- Find Recipes with what you have on your fridge! -</p>
+    </section>
+    <div class="container">
+        <form>
+            <div class="search-box">
+                <input type="text" id="search" class="search-txt" placeholder="Enter ingredients separated by commas (e.g., tomatoes, onions, garlic)...">
+            </div>
+            <button type="submit" id="submit" class="search-btn">Search <i class="fas fa-search"></i></button>
+        </form>
+        <div id="results"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

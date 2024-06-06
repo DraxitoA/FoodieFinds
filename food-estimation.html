@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Calculator - FoodieFinds</title>
+        <link rel="stylesheet" href="style-calc.css">
+        <link href="https://fonts.cdnfonts.com/css/h-hadir-sans" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.cdnfonts.com/css/diary-santa" rel="stylesheet">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    </head>
+<body>
+    <header id="main-header" class="navbar">
+        <h1 class="logo">FoodieFinds.</h1>
+        <nav>
+            <ul>
+                <button class="home"><a href="home.html">HOME</a></button>
+                <button class="rcp-finder"><a href="rcp-finder.html">RECIPE FINDER</a></button>
+                <button class="food-calc" href="food-estimation.html"><a>FOOD CALCULATOR</a></button>
+                <button class="fw-tips"><a href="foodwaste-tips.html">FOOD WASTE TIPS</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="food-estimation">
+        <h1 class="section-title">- Food Portion Estimator -</h1>
+        <div class="calculator-form">
+            <label for="guests" class="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" min="1" value="1">
+
+            <label for="food-type" class="food-type">Type of Food:</label>
+            <select id="food-type" name="food-type" class="select-lbltype">
+                <option value="protein">Protein</option>
+                <option value="carbohydrates">Carbohydrates</option>
+                <option value="vegetables">Vegetables</option>
+                <option value="fruits">Fruits</option>
+            </select>
+
+            <label for="serving-size" class="serving-size">Serving Size:</label>
+            <input type="number" id="serving-size" name="serving-size" min="1" value="1">
+
+            <button class="calculate-btn" onclick="calculatePortions()">Calculate</button>
+        </div>
+        <div class="calculator-results">
+            <h3 class="results-title">Estimated Food Portions:</h3>
+            <p id="portions-result"></p>
+        </div>
+    </section>
+    <script src="food-estimation.js"></script>
+</body>
+</html>

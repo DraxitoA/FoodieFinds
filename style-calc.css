@@ -1,0 +1,244 @@
+/* Import Fonts */
+@import url('https://fonts.cdnfonts.com/css/blue-angel-demo');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+/* General Styles */
+body {
+  min-height: 100vh;
+  max-width: 2000px;
+  background-color: #1D1E22;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a4a53;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6a6a6a;
+}
+
+/* Header Styles */
+header {
+  position: static;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1D1E22;
+  z-index: 2;
+}
+
+.logo {
+  font-family: 'Blue Angel - Demo', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 2.2em;
+  float: left;
+  margin-left: 10px;
+  color: white;
+}
+
+header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul button {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
+.home:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 53px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.rcp-finder:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 110px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.food-calc:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.fw-tips:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 134px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar ul button:hover::after {
+  background-color: #0bda51;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+.dinner-calculator {
+  padding: 40px;
+  background-color: #1D1E22;
+  color: white;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator-form label {
+  margin-bottom: 15px;
+  font-size: 16px; 
+  text-align: center;
+}
+
+.calculator-form input {
+  margin-bottom: 15px;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+}
+
+.calculator-form input[type="number"] {
+  background-color: transparent;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+.calculator-form input[type="number"]:focus {
+  border: none;
+}
+
+.calculator-form select {
+  background-color: transparent;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  border: none; 
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.calculator-form select:focus {
+  border: none;
+}
+
+.calculator-form select option {
+  color: white;
+}
+
+.calculate-btn {
+  background-color: #0bda51;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calculate-btn:hover {
+  background-color: #00c542;
+}
+
+.calculator-results {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-title {
+  margin-bottom: 10px;
+}
+
+.result-value {
+  font-weight: bold;
+}

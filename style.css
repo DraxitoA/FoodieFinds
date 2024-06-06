@@ -1,0 +1,488 @@
+/* Import Fonts */
+@import url('https://fonts.cdnfonts.com/css/blue-angel-demo');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+
+/* General Styles */
+body {
+  min-height: 100vh;
+  max-width: 2000px;
+  background-color: #1D1E22;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 6px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4a4a53;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #6a6a6a;
+}
+
+/* Header Styles */
+header {
+  position: static;
+  height: 50px;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1D1E22;
+  z-index: 2;
+}
+
+.logo {
+  font-family: 'Blue Angel - Demo', sans-serif;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 2.2em;
+  float: left;
+  margin-left: 10px;
+  color: white;
+}
+
+header nav a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+  margin-right: 10px;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul button {
+  position: relative;
+  background-color: transparent;
+  text-align: center;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+
+.home:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 53px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.rcp-finder:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 110px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.food-calc:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 145px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.fw-tips:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 134px;
+  height: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition: ease-in-out 0.5s;
+}
+
+.navbar ul button:hover::after {
+  background-color: #0bda51;
+  
+}
+
+.navbar a {
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 14px;
+  color: white;
+}
+
+/* Cover Section */
+.cover {
+  height: 400px;
+  background-color: #1D1E22;
+}
+
+.title1 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: black;
+  font-size: 30px;
+  float: left;
+  margin-left: 40px;
+  margin-top: 100px;
+  margin-bottom: 0;
+}
+
+hr {
+  height: 1.2px;
+  width: 530px;
+  background-color: #e096e1;
+  float: left;
+  margin-left: 40px;
+  transform: translateY(-160px);
+}
+
+.cover-img {
+  position: relative;
+  width: 430px;
+  transform: translate(190px, 43px);
+}
+
+.description1 {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-left: 40px;
+  justify-content: left;
+  transform: translateY(-150px);
+}
+
+/* Recipe Info Section */
+.rcp-info {
+  height: 380px;
+  background-color: #2f2f34;
+}
+
+.title2 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: black;
+  font-size: 30px;
+  float: right;
+  margin-right: 152px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.line2 {
+  transform: translate(670px, 95px);
+  width: 465px;
+  margin-right: 40px;
+}
+
+.rcp-img {
+  position: absolute;
+  width: 610px;
+  transform: translate(-180px, -110px);
+  margin-bottom: 0;
+}
+
+.rcp-info p {
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17.5px;
+  margin-right: 135px;
+  float: right;
+  text-align: right;
+  transform: translate(528px, 85px);
+}
+
+.btn {
+  transform: translate(990px, 90px);
+  display: inline-block;
+  margin-top: 10px;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  line-height: 50px;
+  font-size: 16px;
+  margin: 4px;
+  padding: 0 18px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.btn:hover, .btn:focus {
+  color: #fff;
+  background-color: #e096e1;
+  outline: 0;
+}
+
+.fourth {
+  border-color: #e096e1;
+  color: #e096e1;
+  background-image: linear-gradient(45deg, #e096e1 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+}
+
+.fourth:hover {
+  background-position: 0;
+  color: #fff;
+}
+
+.fourth:focus {
+  color: #e096e1;
+}
+
+/* Food Calculation Section */
+.food-calc-info {
+  height: 340px;
+  background-color: #363436;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  box-sizing: border-box;
+  width: calc(40% - 20px);
+  float: left;
+}
+
+.title3 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: black;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.line3 {
+    width: 420px;
+    margin-left: 40px;
+    margin-top: 4px;
+    margin-bottom: 5px;
+    transform: translate(-40px, -20px);
+}
+
+.c-info {
+  margin-top: 2px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 17.5px;
+  width: calc(100% - 80px);
+  text-align: left;
+  float: left;
+}
+
+.food-image-container {
+  width: 61.42%;
+  height: 340px;
+  float: left;
+  position: relative;
+}
+
+.food-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.food-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.btn2 {
+  display: inline-block;
+  transform: translateY(0px);
+  align-items: center;
+  height: 40px;
+  width: auto;
+  padding: 0 15px;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.btn2:hover, .btn2:focus {
+  color: #fff;
+  background-color: #e096e1;
+  outline: 0;
+}
+
+.fifth {
+  border-color: #e096e1;
+  color: #e096e1;
+  background-image: linear-gradient(45deg, #e096e1 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+}
+  
+.fifth:hover {
+  background-position: 0;
+  color: #fff;
+}
+  
+.fifth:focus {
+  color: #e096e1;
+}
+
+/* Food Waste Section */
+.food-waste-container {
+  width: calc(40% - 20px);
+  height: 370px;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+
+.food-waste-image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.food-waste-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.food-waste-tips {
+  background-color: #1D1E22;
+  width: calc(60% - 20px);
+  height: 370px;
+  float: left; 
+}
+
+.title4 {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: black;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  margin-left: 40px;
+}
+
+.line4 {
+  width: 360px;
+  margin-top: 4px;
+  margin-bottom: 20px;
+  transform: translate(0px, 0px);
+}
+
+.tip-info {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 14px;
+  font-size: 17.5px;
+  margin-left: 40px;
+  margin-right: 40px;
+  float: left;
+  clear: both;
+}
+
+.btn3 {
+  display: inline-block;
+  transform: translateY(18px);
+  height: 40px;
+  padding: 0 15px;
+  background-color: transparent;
+  border: 2px solid #e74c3c;
+  border-radius: 0.6em;
+  color: #e74c3c;
+  cursor: pointer;
+  line-height: 40px;
+  font-size: 17px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: background 300ms ease-in-out, color 300ms ease-in-out;
+  margin-left: 40px;
+}
+
+.btn3:hover, .btn3:focus {
+  color: #fff;
+  background-color: #e096e1;
+  outline: 0;
+}
+
+.sixth {
+  border-color: #e096e1;
+  color: #e096e1;
+  background-image: linear-gradient(45deg, #e096e1 50%, transparent 50%);
+  background-position: 100%;
+  background-size: 400%;
+}
+  
+.fifth:hover {
+  background-position: 0;
+  color: #fff;
+}
+  
+.fifth:focus {
+  color: #e096e1;
+}
